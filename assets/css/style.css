@@ -115,28 +115,109 @@ img{
 }
 
 /* nav */
-.bd-container{
+nav{
     /* styles propios */
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--header-height);
     background: orange;
     padding: 0 10px;
 
     max-width: 968px;
     width: 100%;
+
      /*width: calc(100% -3rem);
     margin-left: var(--mb-3);
     margin-right: var(--mb-3); */
 }
 
 /*  nav  */
-.nav{
+/* .nav{
     height: var(--header-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} */
 
 .bd-grid{
     display: grid;
     gap: 1.5rem;
 }
+
+.navLogo{
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+/* @media screen and (max-width: 968px) {
+    
+} */
+.navMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    position: fixed;
+    /* bottom: var(--header-height); */
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+    border-radius: 1rem 1rem 0 0;
+    z-index: var(--z-fized);
+    transition: .3;
+
+    background: pink;
+}
+
+/* show menu - class active */
+.show-menu{
+    bottom: var(--header-height);
+}
+
+.navList{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.navList
+.navItem{
+    text-align: center;
+}
+
+.navList
+.navItem
+.navLink{
+    display: flex;
+    flex-direction: column;
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+    font-weight: var(--font-medium);
+}
+
+.navList
+.navItem
+.navLink:hover{
+    color: var(--title-color);
+}
+
+.navList
+.navItem
+.navLink
+.icon{
+    font-size: 1.2rem;
+    margin-bottom: var(--mb-1);
+}
+
+
+.navToggle{
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
