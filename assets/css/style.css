@@ -167,8 +167,9 @@ nav{
     padding: 2rem 1.5rem;
     box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
     border-radius: 1rem 1rem 0 0;
-    z-index: var(--z-fized);
-    transition: .3;
+    /*  z-index: var(--z-fized); */
+    z-index: -50;
+    transition: .3s;
 
     background: pink;
 }
@@ -182,6 +183,7 @@ nav{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    background: red;
 }
 
 .navList
@@ -197,6 +199,9 @@ nav{
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
     font-weight: var(--font-medium);
+    padding: 10px 5px;
+
+    background: yellow;
 }
 
 .navList

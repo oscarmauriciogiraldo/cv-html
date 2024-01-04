@@ -20,5 +20,14 @@ showMenu('nav-toggle', 'nav-menu')
 /**
  * @name: removeMenu
  * @author: Oscar giraldo
- * @description
- */
+ * @description: This function removes the menu 
+ * upon clicking on any icon to navigate to that section.
+*/
+const navLink = document.querySelectorAll('.navLink')
+
+function linkAction(){
+    const navMenu = document.getElementById('nav-menu')
+    //when we click on each navLink, remove the show-menu class
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(element => element.addEventListener('click', linkAction))
