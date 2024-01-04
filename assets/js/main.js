@@ -31,3 +31,10 @@ function linkAction(){
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(element => element.addEventListener('click', linkAction))
+
+/**
+ *
+ * @author: OScar Giraldo
+ * @name: Scroll active
+ * @description: 
+*/

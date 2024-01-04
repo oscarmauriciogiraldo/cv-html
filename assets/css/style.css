@@ -140,10 +140,10 @@ nav{
     align-items: center;
 } */
 
-.bd-grid{
+/* .bd-grid{
     display: grid;
     gap: 1.5rem;
-}
+} */
 
 .navLogo{
     color: var(--title-color);
@@ -167,6 +167,7 @@ nav{
     padding: 2rem 1.5rem;
     box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
     border-radius: 1rem 1rem 0 0;
+    border-top: solid 1px #8A2BE2;
     /*  z-index: var(--z-fized); */
     z-index: -50;
     transition: .3s;
@@ -197,7 +198,8 @@ nav{
     display: flex;
     flex-direction: column;
     font-size: var(--smaller-font-size);
-    color: var(--text-color-light);
+    /* color: var(--text-color-light); */
+    color: #8A2BE2;
     font-weight: var(--font-medium);
     padding: 10px 5px;
 
