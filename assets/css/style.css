@@ -98,10 +98,9 @@ img{
 
 /* ********************** LAYAUT **********************  */
 /* header */
-.l-header{
-    /* styles propios */
+header{
+    
     display: flex;
-
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -109,7 +108,6 @@ img{
     z-index: var(--z-fized);
     box-shadow: 0 -1px 4px rgba(0, 0, 0, .1);
     transition: .3s;
-
     background: yellowgreen;
     padding: 0px 10px;
 }
@@ -209,6 +207,12 @@ nav{
 .navList
 .navItem
 .navLink:hover{
+    color: var(--title-color);
+}
+
+.navList
+.navItem
+.active-link{
     color: var(--title-color);
 }
 
