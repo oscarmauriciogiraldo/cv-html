@@ -48,7 +48,8 @@ html{
 }
 
 body{
-    margin: 0 0 var(--header-height) 0;
+    /* margin: 0 0 var(--header-height) 0; */
+    margin: 0;
     padding: 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
@@ -74,10 +75,10 @@ a{
     text-decoration: none;
 }
 
-img{
+/* img{
     max-width: 100%;
     height: auto;
-}
+} */
 
 /* ********************** class css **********************  */
 .section{
@@ -138,10 +139,10 @@ nav{
     align-items: center;
 } */
 
-/* .bd-grid{
+.bd-grid{
     display: grid;
     gap: 1.5rem;
-} */
+}
 
 .navLogo{
     color: var(--title-color);
@@ -230,5 +231,70 @@ nav{
     font-weight: var(--font-medium);
     font-size: 1.2rem;
     cursor: pointer;
+}
+
+/* ****************** HOME ****************** */
+
+
+/* .homeImg{
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    justify-self: center;
+} */
+
+main.container{
+    background: yellowgreen;
+    padding: 0px 5px;
+}
+
+main.container
+.resume{
+    background: yellow;
+    padding: 0px 5px;
+}
+
+section.home{
+    position: relative;
+    background: lightcoral;
+    padding: 0px 5px;
+}
+
+.homeContainer{
+    gap: 3;
+    background: lightblue;
+    /* padding: 0px 5px; */
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.homeData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: .5rem;
+    text-align: center;
+    background: lightseagreen;
+}
+
+.bxPerfilImg{
+    background: red;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom:var(--mb-1);
+}
+
+.bxPerfilImg
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.homeAddres{
+    background: yellow;
 }
 
