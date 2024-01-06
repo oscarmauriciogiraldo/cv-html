@@ -19,7 +19,7 @@
     --h2-font-size: 1.25rem;
     --h3-font-size: 1rem;
     --normal-font-size: .938rem;
-    --small-font-size: 875rem;
+    --small-font-size: .875rem;
     --smaller-font-size: .813rem;
 
     /* ** Font Weiht ** */
@@ -254,6 +254,7 @@ main.container
     padding: 0px 5px;
 }
 
+/* ******************** SECTION HOME ******************** */
 section.home{
     position: relative;
     background: lightcoral;
@@ -279,6 +280,7 @@ section.home{
     background: lightseagreen;
 }
 
+.homeData
 .bxPerfilImg{
     background: red;
     width: 210px;
@@ -288,13 +290,124 @@ section.home{
     margin-bottom:var(--mb-1);
 }
 
+.homeData
 .bxPerfilImg
 img{
     max-width: 100%;
     height: auto;
 }
 
-.homeAddres{
+.homeData
+.homeTilte{
+    font-size: var(--h1-font-size);
+}
+
+.homeData
+.homeProfesion{
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-1);
+}
+
+.homeData
+.profesionalCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    gap: .5rem;
     background: yellow;
 }
+
+.homeData
+.profesionalCard
+.cardProfesion{
+    font-size: var(--h3-font-size);
+}
+
+.homeData
+.downloadButton{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 0;
+    background: pink;
+}
+
+.homeData
+.downloadButton
+.homeButtonMovil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid var(--text-color);
+    color: var(--title-color);
+    padding: 1rem 2rem;
+    border-radius: .25rem;
+    transition: .3s;
+    font-weight: var(--font-medium);
+    /* margin-top: var(--mb-3); */
+    cursor: pointer;
+}
+
+
+
+.homeData
+.downloadButton
+.homeButtonMovil:hover{
+    background: var(--text-color);
+    color: var(--container-color);
+}
+
+.homeAddres{
+    background: yellow;
+    gap: 1rem;
+}
+
+.homeAddres
+.homeinformation{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: var(--small-font-size);
+    background: orange;
+}
+
+.homeAddres
+.homeinformation
+a{
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
+    justify-content: space-between;
+    width: 80%;
+    text-decoration: none;
+    cursor: pointer;
+    background: red;
+}
+
+.homeAddres
+.homeinformation
+a
+.fa-link{
+    /* justify-self: flex-end; */
+    font-size: var(--smaller-font-size);
+    margin-left: .60rem;
+}
+
+.homeAddres
+.homeinformation
+.iconHome{
+    font-size: 1.2rem;
+    margin-right: .30rem;
+}
+
+
+
+
+
 
